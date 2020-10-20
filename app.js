@@ -13,6 +13,7 @@ const app = express();
 // ? set up view engin
 app.set("view engine", "ejs");
 
+const cookieSession = require("cookie-session");
 app.use(
   cookieSession({
     maxAge: 24 * 60 * 60,
